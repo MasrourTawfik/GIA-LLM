@@ -5,7 +5,6 @@
 
 Welcome to Chat2IA's documentation!
 ====================================
-Hello
 
 .. toctree::
    :maxdepth: 2
