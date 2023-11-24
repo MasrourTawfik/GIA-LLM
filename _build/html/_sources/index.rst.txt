@@ -5,12 +5,12 @@
 
 Welcome to Chat2IA's documentation!
 ====================================
-Hello
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   options/jus
 
 
 Indices and tables
