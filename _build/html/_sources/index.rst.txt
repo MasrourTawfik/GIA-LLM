@@ -10,7 +10,6 @@ Welcome to Chat2IA's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   options/jus
 
 
 Indices and tables
