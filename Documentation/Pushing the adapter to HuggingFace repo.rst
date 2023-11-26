@@ -1,5 +1,6 @@
-Pushing the adapter to Hugging Face
-===============
+Pushing the adapter into HuggingFace
+======================================
+
 
 In this section, we will show you how to push your adapter to Hugging Face. This will allow you to easily access your adapter from the Hugging Face Hub and use it in your own projects.
 

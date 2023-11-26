@@ -8,8 +8,13 @@ Welcome to Chat2IA's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Table of Content:
 
+   Documentation/Introduction
+
+   Documentation/Model
+
+   Documentation/Synthetic_data
 
 
 Indices and tables
