@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pushing the adapter into HuggingFace &mdash; ChatG2IA  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -87,14 +89,14 @@
              
   <section id="pushing-the-adapter-into-huggingface">
 <h1>Pushing the adapter into HuggingFace<a class="headerlink" href="#pushing-the-adapter-into-huggingface" title="Link to this heading"></a></h1>
-<p>In this section, we will show you how to push your adapter to Hugging Face. This will allow you to easily access your adapter from the Hugging Face Hub and use it in your own projects.</p>
+<p class="linemarker linemarker-5">In this section, we will show you how to push your adapter to Hugging Face. This will allow you to easily access your adapter from the Hugging Face Hub and use it in your own projects.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This section assumes that you have already went through the fine-tuning using the Ludwig library and that you have a Hugging Face account. If you have not done so, please go back to this section first (2.3 fine-tuning using Ludwig).</p>
+<p class="linemarker linemarker-8">This section assumes that you have already went through the fine-tuning using the Ludwig library and that you have a Hugging Face account. If you have not done so, please go back to this section first (2.3 fine-tuning using Ludwig).</p>
 </div>
 <section id="ludwig-api">
 <h2>Ludwig API<a class="headerlink" href="#ludwig-api" title="Link to this heading"></a></h2>
-<p>Assuming that you have used Ludwig to fine-tune an open source llm of your choice. At the end of training, a new folder will be created called <strong>results</strong>. This is an example of what you will see after the training is done:</p>
+<p class="linemarker linemarker-13">Assuming that you have used Ludwig to fine-tune an open source llm of your choice. At the end of training, a new folder will be created called <strong>results</strong>. This is an example of what you will see after the training is done:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>results
 ├──<span class="w"> </span>api_experiment_run_x<span class="w">  </span><span class="c1"># x refers to the training run (integer)</span>
 │<span class="w">   </span>├──<span class="w"> </span>config.yaml
@@ -112,14 +114,14 @@
 <span class="w">    </span>└──<span class="w"> </span>training_args.bin
 </pre></div>
 </div>
-<p>Now to push your adapter to Hugging Face, you will need to run the following command:</p>
+<p class="linemarker linemarker-33">Now to push your adapter to Hugging Face, you will need to run the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ludwig<span class="w"> </span>upload<span class="w"> </span>hf_hub<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--repo_id<span class="w"> </span><span class="o">{</span>profile/repo_name<span class="o">}</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--model_path<span class="w"> </span>/content/results/api_experiment_run
 </pre></div>
 </div>
-<p>To be able to run this command, you will to create a Hugging Face token. To do so, go to your Hugging Face profile page and click on the <strong>Access Tokens</strong> button, then click on the <strong>New token</strong> button to generate your token. Then, copy the token and paste it in the console after running the command.</p>
-<p>repo_id refers to the name of your repository on Hugging Face. For example, if you want to push your adapter to the following <a class="reference external" href="https://huggingface.co/Azulian/DoctorLLM2">repository</a>, then the repo_id will be <code class="docutils literal notranslate"><span class="pre">Azulian/DoctorLLM2</span></code>.</p>
+<p class="linemarker linemarker-41">To be able to run this command, you will to create a Hugging Face token. To do so, go to your Hugging Face profile page and click on the <strong>Access Tokens</strong> button, then click on the <strong>New token</strong> button to generate your token. Then, copy the token and paste it in the console after running the command.</p>
+<p class="linemarker linemarker-43">repo_id refers to the name of your repository on Hugging Face. For example, if you want to push your adapter to the following <a class="reference external" href="https://huggingface.co/Azulian/DoctorLLM2">repository</a>, then the repo_id will be <code class="docutils literal notranslate"><span class="pre">Azulian/DoctorLLM2</span></code>.</p>
 </section>
 </section>
 

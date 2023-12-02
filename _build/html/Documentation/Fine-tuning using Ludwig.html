@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fine-tuning using Ludwig &mdash; ChatG2IA  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -92,10 +94,10 @@
              
   <section id="fine-tuning-using-ludwig">
 <h1>Fine-tuning using Ludwig<a class="headerlink" href="#fine-tuning-using-ludwig" title="Link to this heading"></a></h1>
-<p>Fine-tuning allows the adaptation of pre-trained LLMs to a specific task by updating model weights, leading to performance improvements. It’s a means to personalize these general models for specialized applications, optimizing performance for unique tasks.</p>
+<p class="linemarker linemarker-4">Fine-tuning allows the adaptation of pre-trained LLMs to a specific task by updating model weights, leading to performance improvements. It’s a means to personalize these general models for specialized applications, optimizing performance for unique tasks.</p>
 <section id="traditional-fine-tuning-vs-parameter-efficient-fine-tuning">
 <h2>1. Traditional Fine Tuning Vs. Parameter Efficient Fine-Tuning<a class="headerlink" href="#traditional-fine-tuning-vs-parameter-efficient-fine-tuning" title="Link to this heading"></a></h2>
-<p>Traditional fine-tuning involves updating all model parameters, a process proven to be resource-intensive, time-consuming, and not always yield optimal task-specific performance. However, recent innovations in parameter-efficient fine-tuning have offered a breakthrough. By freezing the pre-trained LLM and only training a very small set of task-specific layers—less than 1% of the total model weight—efficient fine-tuning proves to be both resource-friendly and more effective.</p>
+<p class="linemarker linemarker-8">Traditional fine-tuning involves updating all model parameters, a process proven to be resource-intensive, time-consuming, and not always yield optimal task-specific performance. However, recent innovations in parameter-efficient fine-tuning have offered a breakthrough. By freezing the pre-trained LLM and only training a very small set of task-specific layers—less than 1% of the total model weight—efficient fine-tuning proves to be both resource-friendly and more effective.</p>
 <a class="reference internal image-reference" href="../_images/q2.png"><img alt="../_images/q2.png" class="align-center" src="../_images/q2.png" style="width: 100%;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -103,13 +105,13 @@
 </section>
 <section id="id1">
 <h2>1. Fine-tuning using Ludwig<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
-<p>Ludwig offers a declarative approach to machine learning, providing an accessible interface to control and customize models without extensive coding. Its YAML-based configurations empower users to manage different input features and output tasks efficiently.
+<p class="linemarker linemarker-19">Ludwig offers a declarative approach to machine learning, providing an accessible interface to control and customize models without extensive coding. Its YAML-based configurations empower users to manage different input features and output tasks efficiently.
 Imagine a world where we feed the model a prompt, pair it with specific instructions and context, and let the magic happen. The prompt acts as a guide, steering the model’s understanding of the task at hand. And this is where Ludwig’s advanced features come into play.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>This toolkit a single memory-contrained GPU, including: LoRA and 4-bit quantization.</p>
+<p class="linemarker linemarker-22">This toolkit a single memory-contrained GPU, including: LoRA and 4-bit quantization.</p>
 </div>
-<p>Now, let’s delve deeper into the nitty-gritty of advanced configuration and the fine-tuning parameters that Ludwig offers.</p>
+<p class="linemarker linemarker-24">Now, let’s delve deeper into the nitty-gritty of advanced configuration and the fine-tuning parameters that Ludwig offers.</p>
 </section>
 <section id="install-ludwig-and-ludwig-s-llm-related-dependencies">
 <h2>1.1 Install Ludwig and Ludwig’s LLM related dependencies<a class="headerlink" href="#install-ludwig-and-ludwig-s-llm-related-dependencies" title="Link to this heading"></a></h2>
@@ -174,22 +176,22 @@ Imagine a world where we feed the model a prompt, pair it with specific instruct
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">n_rows</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>Understanding The Code Alpaca Dataset</strong></p>
+<p class="linemarker linemarker-94"><strong>Understanding The Code Alpaca Dataset</strong></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This is how the dataset looks like:</p>
+<p class="linemarker linemarker-100">This is how the dataset looks like:</p>
 <a class="reference internal image-reference" href="../_images/data.JPG"><img alt="../_images/data.JPG" class="align-center" src="../_images/data.JPG" style="width: 100%;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>This dataset is meant to train a large language model to following instructions to produce code from natural language. Each row in the dataset consists of an:</p>
+<p class="linemarker linemarker-108">This dataset is meant to train a large language model to following instructions to produce code from natural language. Each row in the dataset consists of an:</p>
 <ul class="simple">
-<li><p>instruction that describes a task</p></li>
-<li><p>input when additional context is required for the instruction, and</p></li>
-<li><p>the expected output.</p></li>
+<li><p class="linemarker linemarker-110">instruction that describes a task</p></li>
+<li><p class="linemarker linemarker-111">input when additional context is required for the instruction, and</p></li>
+<li><p class="linemarker linemarker-112">the expected output.</p></li>
 </ul>
-<p>This is a script that calculates various statistics for token distributions in different columns of a DataFrame.</p>
+<p class="linemarker linemarker-114">This is a script that calculates various statistics for token distributions in different columns of a DataFrame.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="n">AutoTokenizer</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
@@ -260,12 +262,12 @@ Imagine a world where we feed the model a prompt, pair it with specific instruct
 <h2>1.4. Fine-tuning<a class="headerlink" href="#fine-tuning" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>We’re going to fine-tune using a single T4 GPU with 16GiB of GPU VRAM on Colab.
+<p class="linemarker linemarker-189">We’re going to fine-tune using a single T4 GPU with 16GiB of GPU VRAM on Colab.
 To do this, the new parameters we’re introducing are:</p>
 <ul class="simple">
-<li><p>adapter: The PEFT method we want to use</p></li>
-<li><p>quantization: Load the weights in int4 or int8 to reduce memory overhead.</p></li>
-<li><p>trainer: We enable the finetune trainer and can configure a variety of training parameters such as epochs and learning rate.</p></li>
+<li><p class="linemarker linemarker-192">adapter: The PEFT method we want to use</p></li>
+<li><p class="linemarker linemarker-193">quantization: Load the weights in int4 or int8 to reduce memory overhead.</p></li>
+<li><p class="linemarker linemarker-194">trainer: We enable the finetune trainer and can configure a variety of training parameters such as epochs and learning rate.</p></li>
 </ul>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">qlora_fine_tuning_config</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span>
@@ -329,7 +331,7 @@ To do this, the new parameters we’re introducing are:</p>
 <span class="n">results</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">dataset</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>Perform Inference</strong>
+<p class="linemarker linemarker-258"><strong>Perform Inference</strong>
 We can now use the model we fine-tuned above to make predictions on some test examples to see whether fine-tuning the large language model improve its ability to follow instructions/the tasks we’re asking it to perform.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;instruction&#39;</span><span class="p">,</span> <span class="s1">&#39;input&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="n">n_rows</span><span class="p">:]</span><span class="o">.</span><span class="n">shape</span>
 <span class="n">test_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;instruction&#39;</span><span class="p">,</span> <span class="s1">&#39;input&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="n">n_rows</span><span class="p">:]</span>
@@ -341,14 +343,14 @@ We can now use the model we fine-tuned above to make predictions on some test ex
 <span class="n">result_df</span>
 </pre></div>
 </div>
-<p>This is how the dataset looks like:</p>
+<p class="linemarker linemarker-272">This is how the dataset looks like:</p>
 <a class="reference internal image-reference" href="../_images/dataFineTun.JPG"><img alt="../_images/dataFineTun.JPG" class="align-center" src="../_images/dataFineTun.JPG" style="width: 100%;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>he inference outputs may not be perfect, especially if the fine-tuning epochs are limited. However, by tweaking parameters like generation configuration (temperature, maximum new tokens, etc.), the outputs can be altered, thereby refining the model’s responses.</p>
+<p class="linemarker linemarker-280">he inference outputs may not be perfect, especially if the fine-tuning epochs are limited. However, by tweaking parameters like generation configuration (temperature, maximum new tokens, etc.), the outputs can be altered, thereby refining the model’s responses.</p>
 </div>
 </section>
 </section>

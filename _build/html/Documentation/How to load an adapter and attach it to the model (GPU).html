@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How to load an adapter and attach it to the model (GPU) &mdash; ChatG2IA  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -92,23 +94,23 @@
              
   <section id="how-to-load-an-adapter-and-attach-it-to-the-model-gpu">
 <h1>How to load an adapter and attach it to the model (GPU)<a class="headerlink" href="#how-to-load-an-adapter-and-attach-it-to-the-model-gpu" title="Link to this heading"></a></h1>
-<p>To enhance the capabilities of your model, you can load pre-trained <code class="docutils literal notranslate"><span class="pre">adapters</span></code> and attach them. This process involves loading the adapter, previously pushed to the Hugging Face Model Hub, and then attaching it to your existing model. Follow these steps to achieve this integration:</p>
+<p class="linemarker linemarker-4">To enhance the capabilities of your model, you can load pre-trained <code class="docutils literal notranslate"><span class="pre">adapters</span></code> and attach them. This process involves loading the adapter, previously pushed to the Hugging Face Model Hub, and then attaching it to your existing model. Follow these steps to achieve this integration:</p>
 <section id="install-required-packages">
 <h2>1. Install Required Packages<a class="headerlink" href="#install-required-packages" title="Link to this heading"></a></h2>
-<p>Before proceeding, make sure to install the necessary Python packages. Open your terminal, command prompt, or a code cell in your preferred environment (e.g., Jupyter Notebook, Google Colab) and run the following commands:</p>
+<p class="linemarker linemarker-9">Before proceeding, make sure to install the necessary Python packages. Open your terminal, command prompt, or a code cell in your preferred environment (e.g., Jupyter Notebook, Google Colab) and run the following commands:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>!pip<span class="w"> </span>install<span class="w"> </span>peft
 !pip<span class="w"> </span>install<span class="w"> </span>bitsandbytes
 !pip<span class="w"> </span>install<span class="w"> </span>transformers
 !pip<span class="w"> </span>install<span class="w"> </span>accelerate
 </pre></div>
 </div>
-<p>This ensures that you have the required dependencies installed.</p>
+<p class="linemarker linemarker-18">This ensures that you have the required dependencies installed.</p>
 </section>
 <section id="load-and-configure-the-model">
 <h2>2. Load and Configure the Model<a class="headerlink" href="#load-and-configure-the-model" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Before loading the adapter, ensure the model is loaded. If it’s already loaded, proceed to the next stage. If not, execute the following Python code:</p>
+<p class="linemarker linemarker-24">Before loading the adapter, ensure the model is loaded. If it’s already loaded, proceed to the next stage. If not, execute the following Python code:</p>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bitsandbytes</span> <span class="k">as</span> <span class="nn">bnb</span>
 <span class="kn">import</span> <span class="nn">transformers</span>
@@ -150,7 +152,7 @@
 <span class="n">tokenizer</span><span class="o">.</span><span class="n">pad_token</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">eos_token</span>
 </pre></div>
 </div>
-<p>The following code defines a prompt generating a response based on a given instruction and input. (It’s just an example).</p>
+<p class="linemarker linemarker-69">The following code defines a prompt generating a response based on a given instruction and input. (It’s just an example).</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">instruction</span> <span class="o">=</span> <span class="s2">&quot;Create a function to calculate the sum of a sequence of integers.&quot;</span>
 <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;[1, 2, 3, 4, 5]&quot;</span>
 
@@ -168,20 +170,20 @@
 </section>
 <section id="load-adapters-with-peft">
 <h2>3. Load adapters with 🤗 PEFT<a class="headerlink" href="#load-adapters-with-peft" title="Link to this heading"></a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">Parameter-Efficient</span> <span class="pre">Fine</span> <span class="pre">Tuning</span> <span class="pre">(PEFT)</span></code> methods freeze the pretrained model parameters during fine-tuning and add a small number of trainable parameters (the adapters) on top of it. The adapters are trained to learn task-specific information.</p>
-<p>To load and use a PEFT adapter model from 🤗 Transformers, make sure the Hub repository or local directory contains an adapter_config.json file and the adapter weights, as shown in the example image above.</p>
+<p class="linemarker linemarker-90"><code class="docutils literal notranslate"><span class="pre">Parameter-Efficient</span> <span class="pre">Fine</span> <span class="pre">Tuning</span> <span class="pre">(PEFT)</span></code> methods freeze the pretrained model parameters during fine-tuning and add a small number of trainable parameters (the adapters) on top of it. The adapters are trained to learn task-specific information.</p>
+<p class="linemarker linemarker-92">To load and use a PEFT adapter model from 🤗 Transformers, make sure the Hub repository or local directory contains an adapter_config.json file and the adapter weights, as shown in the example image above.</p>
 <img alt="Adapter config file and weights" class="align-center" src="../_images/peft.JPG" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Then you can load the PEFT adapter model using the code below:</p>
+<p class="linemarker linemarker-100">Then you can load the PEFT adapter model using the code below:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">peft_model_id</span> <span class="o">=</span> <span class="s2">&quot;FatimaZahra25/Zephyr_beta&quot;</span>
 <span class="n">model</span><span class="o">.</span><span class="n">load_adapter</span><span class="p">(</span><span class="n">peft_model_id</span><span class="p">)</span>
 </pre></div>
 </div>
 <section id="enable-and-disable-the-adapter">
 <h3>Enable and Disable the Adapter<a class="headerlink" href="#enable-and-disable-the-adapter" title="Link to this heading"></a></h3>
-<p>Once you’ve added an adapter to a model, you can enable or disable the adapter module. To enable the adapter module:</p>
+<p class="linemarker linemarker-110">Once you’ve added an adapter to a model, you can enable or disable the adapter module. To enable the adapter module:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">enable_adapters</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -190,13 +192,13 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">decoded</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
-<p>To disable the adapter module:</p>
+<p class="linemarker linemarker-122">To disable the adapter module:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">disable_adapters</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>The adapter functionality currently utilizes GPU memory.</p>
+<p class="linemarker linemarker-129">The adapter functionality currently utilizes GPU memory.</p>
 </div>
 </section>
 </section>
