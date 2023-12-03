@@ -7,7 +7,7 @@ Fine-tuning allows the adaptation of pre-trained LLMs to a specific task by upda
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Traditional fine-tuning involves updating all model parameters, a process proven to be resource-intensive, time-consuming, and not always yield optimal task-specific performance. However, recent innovations in parameter-efficient fine-tuning have offered a breakthrough. By freezing the pre-trained LLM and only training a very small set of task-specific layers—less than 1% of the total model weight—efficient fine-tuning proves to be both resource-friendly and more effective.
 
-.. image:: /Documentation/q2.png
+.. image:: /Documentation/images/traditional_vs_peft.png
    :width: 100%
    :align: center
 
@@ -28,10 +28,10 @@ Now, let’s delve deeper into the nitty-gritty of advanced configuration and th
 
 .. code-block:: bash
 
-    !pip uninstall -y tensorflow --quiet
-    !pip install ludwig --quiet
-    !pip install ludwig[llm] --quiet
-    !pip install datasets
+    pip uninstall -y tensorflow --quiet
+    pip install ludwig --quiet
+    pip install ludwig[llm] --quiet
+    pip install datasets
 
 .. code-block:: python
 
@@ -99,7 +99,7 @@ Now, let’s delve deeper into the nitty-gritty of advanced configuration and th
 
 This is how the dataset looks like:
 
-.. image:: /Documentation/data.JPG
+.. image:: /Documentation/images/data.JPG
    :width: 100%
    :align: center
 
@@ -271,12 +271,11 @@ We can now use the model we fine-tuned above to make predictions on some test ex
 
 This is how the dataset looks like:
 
-.. image:: /Documentation/dataFineTun.JPG
+.. image:: /Documentation/images/dataFineTuning.JPG
    :width: 100%
    :align: center
 
 |
 
 .. note:: he inference outputs may not be perfect, especially if the fine-tuning epochs are limited. However, by tweaking parameters like generation configuration (temperature, maximum new tokens, etc.), the outputs can be altered, thereby refining the model’s responses.
-
  

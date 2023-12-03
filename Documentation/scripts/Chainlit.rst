@@ -41,7 +41,7 @@ Downloading the model
 
 The models that we need to download from Hugging Face Hub should be in the **GGUF** format. In this `link <https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/tree/main>`_ you can find the **Mistral** model in this format, download the model that has this name **mistral-7b-instruct-v0.1.Q4_K_S.gguf** because we will need it for the rest of this tutorial. If you want to use another llm just search for it in one of TheBloke's `repositories <https://huggingface.co/TheBloke>`_.
 
-.. figure:: /Documentation/mistral_gguf.png
+.. figure:: /Documentation/images/mistral_gguf.png
    :width: 100%
    :align: center
    :alt: Alternative text for the image
@@ -136,7 +136,7 @@ In the interface we'll use the **Slider** and **Switch** widgets to allow the us
         ]
     ).send()
 
-.. figure:: /Documentation/configuration_sliders.png
+.. figure:: /Documentation/images/configuration_sliders.png
    :width: 100%
    :align: center
    :alt: Alternative text for the image
@@ -232,7 +232,7 @@ To run the interface, we'll use the following command:
 
 After running the command, you should see something like this:
 
-.. figure:: /Documentation/chainlit_interface.png
+.. figure:: /Documentation/images/chainlit_interface.png
    :width: 100%
    :align: center
    :alt: Alternative text for the image

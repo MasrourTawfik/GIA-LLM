@@ -5,7 +5,7 @@ from langchain.chains import LLMChain
 from langchain.llms import CTransformers
 from langchain.prompts import PromptTemplate
 
-local_llm = "./zephyr-7b-beta.Q4_0.gguf" # download the model from this link https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/tree/main
+local_llm = "./mistral-7b-instruct-v0.1.Q4_K_S.gguf" # download the model from this link https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/tree/main
 
 config = {
     'max_new_tokens': 128,
