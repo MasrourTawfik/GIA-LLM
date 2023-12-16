@@ -10,16 +10,7 @@ Welcome to Chat2IA's documentation!
    :maxdepth: 2
    :caption: Table of Content:
 
-   Documentation/Introduction
-
-   Documentation/Model
-
-   Documentation/Synthetic_data
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   Documentation/scripts/Group_Members
+   Documentation/scripts/Model
+   Documentation/scripts/Chainlit
+   Documentation/scripts/Synthetic_data
