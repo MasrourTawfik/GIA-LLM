@@ -91,7 +91,7 @@ The following code defines a prompt generating a response based on a given instr
 
 To load and use a PEFT adapter model from 🤗 Transformers, make sure the Hub repository or local directory contains an adapter_config.json file and the adapter weights, as shown in the example image above. 
 
-.. image:: /Documentation/peft.JPG
+.. image:: /Documentation/images/peft.JPG
    :align: center
    :alt: Adapter config file and weights
 

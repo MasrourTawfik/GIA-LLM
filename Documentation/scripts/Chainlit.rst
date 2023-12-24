@@ -47,7 +47,7 @@ The models that we need to download from Hugging Face Hub should be in the **GGU
    :alt: Alternative text for the image
    :name: custom-label
 
-   Caption text goes here.
+   The Mistral-7B-Instruct-v0.1-GGUF model repository.
 
 
 The interface
