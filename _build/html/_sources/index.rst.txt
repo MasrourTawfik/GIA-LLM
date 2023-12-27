@@ -14,3 +14,4 @@ Welcome to Chat2IA's documentation!
    Documentation/scripts/Model
    Documentation/scripts/Chainlit
    Documentation/scripts/Synthetic_data
+   Documentation/scripts/PushDataToHuggingFace
