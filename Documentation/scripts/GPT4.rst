@@ -3,7 +3,7 @@ Data Generation for LLM Fine-tuning with Synthetic Data
 .. _data_generation:
 
 
-In this section, we will explore the process of generating synthetic data using GPT-4 to fine-tune our LLMs (llama2, Zephyr, Falcon, Mistral) for industrial applications, particularly in the Six Sigma and 5M domain.
+In this section, we will explore the process of generating synthetic data using GPT-4 to fine-tune our LLMs (llama2, Zephyr, Falcon, Mistral) for industrial applications. particularly in the Six Sigma and 5M domain.
 
 Synthetic Data Generation Process
 -------------------------------------
@@ -17,12 +17,12 @@ Diversity Considerations
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 - GPT-4 is employed to create synthetic scenarios that span different industrial settings, from manufacturing to service industries.
-- Emphasis is placed on simulating a variety of Six Sigma challenges, ensuring the models are exposed to a broad spectrum of scenarios.
+- Emphasis is placed on simulating a variety of Six Sigma and 5M challenges, ensuring the models are exposed to a broad spectrum of scenarios.
 
 Instruction Crafting
 ~~~~~~~~~~~~~~~~~~~~
 
-- Instructions are carefully crafted to guide GPT-4 in generating responses aligned with Six Sigma principles.
+- Instructions are carefully crafted to guide GPT-4 in generating responses aligned with Six Sigma and 5M principles.
 - Instructions cover scenarios related to DMAIC methodologies, 5S principles, Voice of the Customer analysis, and other Six Sigma, 5M concepts.
 
 Quality Control
@@ -39,7 +39,7 @@ Once synthetic data is generated, it undergoes integration with our LLMs for fin
 Data Input Format
 ~~~~~~~~~~~~~~~~~
 
-- Synthetic data is formatted to match the input requirements of llama2, Zephyr, Falcon, and Mistral.
+- Synthetic data is formatted to match the input requirements of llama2, Zephyr, Falcon, and Mistral or other large language model.
 - The format ensures that the synthetic data seamlessly integrates with each LLM's unique architecture.
 
 Fine-tuning Process
