@@ -5,7 +5,7 @@ Data Generation for LLM Fine-tuning with Synthetic Data
 
 In this section, we will explore the process of generating synthetic data using GPT-4 to fine-tune our LLMs (llama2, Zephyr, Falcon, Mistral) for industrial applications, particularly in the Six Sigma and 5M domain.
 
-3.1 Synthetic Data Generation Process
+Synthetic Data Generation Process
 -------------------------------------
 
 Our decision to leverage synthetic data is driven by the need for a controlled and diverse dataset that encompasses a wide range of Six Sigma and 5M scenarios.
@@ -31,7 +31,7 @@ Quality Control
 - A rigorous quality control process is implemented to ensure the synthetic data's relevance and coherence.
 - Validation against real-world scenarios is performed to guarantee that the synthetic data aligns with actual industrial challenges.
 
-3.2 Data Integration with LLMs
+Data Integration with LLMs
 -------------------------------
 
 Once synthetic data is generated, it undergoes integration with our LLMs for fine-tuning.
@@ -54,7 +54,7 @@ Validation
 - Models are rigorously validated against both real-world and synthetic scenarios to assess their performance.
 - The validation process ensures that the LLMs effectively generalize their knowledge from synthetic data to real-world industrial challenges.
 
-4. Six Sigma Domain Integration
+Six Sigma Domain Integration
 ==============================
 
 Understanding the Six Sigma domain is crucial for ensuring the LLMs produce meaningful and relevant outputs aligned with industry best practices.
@@ -77,7 +77,7 @@ Quality Metrics
 - Six Sigma metrics, including defect rates, process efficiency, and customer satisfaction, play a crucial role in evaluating LLM performance.
 - The integration ensures that LLM-generated solutions are measurable and aligned with Six Sigma quality standards.
 
-5. Examples
+Examples
 ===========
 
 Explore examples of synthetic data generation and the subsequent integration with LLMs for Six Sigma scenarios.
@@ -102,7 +102,7 @@ Quality Assurance
 - Rigorous quality assurance processes ensure the accuracy and relevance of LLM-generated solutions.
 - Validation against real-world scenarios and Six Sigma principles validates the effectiveness of the fine-tuned models.
 
-6. Quality Metrics and Evaluation
+Quality Metrics and Evaluation
 ==================================
 
 To gauge the effectiveness of the fine-tuned models, we employ a set of quality metrics and evaluation techniques.
@@ -118,7 +118,7 @@ Validation against Real-world Data
 
 - Fine-tuned models are validated against real-world Six Sigma scenarios, ensuring practical applicability and effectiveness.
 
-7. Next Steps and Recommendations
+Next Steps and Recommendations
 ==================================
 
 With the LLMs fine-tuned using synthetic data, the next steps involve deploying them in industrial environments.
