@@ -1,5 +1,3 @@
-.. _conversationchain-documentation:
-
 ConversationChain Class
 =======================
 
@@ -115,7 +113,8 @@ Usage Example
     # Load and add documents to the retriever
     conv_chain.load_documents()
 
-**Note**: Classes such as `HuggingFaceBgeEmbeddings`, `LLM_model`, `ParentDocumentRetriever`, `InMemoryStore`, `TextLoader`, and `Chroma` should be properly installed and imported for the `ConversationChain` to function.
+.. note:: 
+    Classes such as ``HuggingFaceBgeEmbeddings``, ``LLM_model``, ``ParentDocumentRetriever``, ``InMemoryStore``, ``TextLoader``, and ``Chroma`` should be properly installed and imported for the ``ConversationChain`` to function.
 
 Important Considerations
 ------------------------
