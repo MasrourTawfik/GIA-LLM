@@ -23,12 +23,7 @@ Instruction Crafting
 ~~~~~~~~~~~~~~~~~~~~
 
 - Instructions are carefully crafted to guide GPT-4 in generating responses aligned with Six Sigma principles.
-- Instructions cover scenarios related to DMAIC methodologies, 5S principles, Voice of the Customer analysis, and other Six Sigma concepts.
-
-Incorporating Six Sigma Principles
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- Synthetic data is generated to reflect core Six Sigma principles, ensuring that the LLMs are well-versed in providing solutions rooted in methodologies such as DMAIC and Lean Six Sigma.
+- Instructions cover scenarios related to DMAIC methodologies, 5S principles, Voice of the Customer analysis, and other Six Sigma, 5M concepts.
 
 Quality Control
 ~~~~~~~~~~~~~~~
@@ -86,7 +81,9 @@ Quality Metrics
 ===========
 
 Explore examples of synthetic data generation and the subsequent integration with LLMs for Six Sigma scenarios.
-
+Here is a  glimpse to six sigma and 5M dataset:
+![Six Sigma Dataset](Documentation/images/six_sigma_dataset.png)
+![5M dataset](Documentation/images/5M_Dataset.jpeg)
 Generating Sample Data
 ~~~~~~~~~~~~~~~~~~~~~~
 
