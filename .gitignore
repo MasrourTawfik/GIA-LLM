@@ -162,3 +162,9 @@ _build/*
 _static/
 *.gguf
 *.pickle
+conversations/
+conv_db/
+conv_store/
+doc_db/
+doc_store/
+documents/
