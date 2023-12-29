@@ -8,7 +8,7 @@ To control the behavior of the llm, we can change some hyperparameters like the 
 
 
 The implementation
---------
+------------------
 
 Let's first import the necessary libraries:
 
@@ -26,7 +26,7 @@ To change the hyperparameters, we will use the ``Slider`` and ``Switch`` widgets
             Slider(
                 id="Temperature",
                 label="Temperature",
-                initial=config['temperature'],
+                initial=1,
                 min=0,
                 max=2,
                 step=0.1,
@@ -34,7 +34,7 @@ To change the hyperparameters, we will use the ``Slider`` and ``Switch`` widgets
             Slider(
                 id="Repetition Penalty",
                 label="Repetition Penalty",
-                initial=config['repetition_penalty'],
+                initial=0.3,
                 min=0,
                 max=2,
                 step=0.1,
@@ -42,7 +42,7 @@ To change the hyperparameters, we will use the ``Slider`` and ``Switch`` widgets
             Slider(
                 id="Top P",
                 label="Top P",
-                initial=config['top_p'],
+                initial=0.7,
                 min=0,
                 max=1,
                 step=0.1,
@@ -50,7 +50,7 @@ To change the hyperparameters, we will use the ``Slider`` and ``Switch`` widgets
             Slider(
                 id="Top K",
                 label="Top K",
-                initial=config['top_k'],
+                initial=42,
                 min=0,
                 max=100,
                 step=1,
@@ -58,7 +58,7 @@ To change the hyperparameters, we will use the ``Slider`` and ``Switch`` widgets
             Slider(
                 id="Max New Tokens",
                 label="Max New Tokens",
-                initial=config['max_new_tokens'],
+                initial=256,
                 min=0,
                 max=1024,
                 step=1,
