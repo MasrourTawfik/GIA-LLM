@@ -1,0 +1,26 @@
+torch
+numpy
+pandas
+chainlit
+langchain
+openai
+ipykernel
+ctransformers
+langchain
+huggingface_hub
+tiktoken
+chromadb
+PyPDF2
+pypdf
+sentence_transformers
+together
+FlagEmbedding
+pydantic==1.10.9
+InstructorEmbedding
+pdfplumber
+pillow
+chromadb
+lark
+tiktoken
+replicate
+faiss-cpu # use faiss-gpu if there's gpu
