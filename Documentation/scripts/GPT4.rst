@@ -3,12 +3,15 @@ Data Generation for LLM Fine-tuning with Synthetic Data
 .. _data_generation:
 
 
-In this section, we will explore the process of generating synthetic data using GPT-4 to fine-tune our LLMs (llama2, Zephyr, Falcon, Mistral) for industrial applications, particularly in the Six Sigma domain.
+In this section, we will explore the process of generating synthetic data using GPT-4 to fine-tune our LLMs (llama2, Zephyr, Falcon, Mistral) for industrial applications, particularly in the Six Sigma and 5M domain.
 
 3.1 Synthetic Data Generation Process
 -------------------------------------
 
-Our decision to leverage synthetic data is driven by the need for a controlled and diverse dataset that encompasses a wide range of Six Sigma scenarios.
+Our decision to leverage synthetic data is driven by the need for a controlled and diverse dataset that encompasses a wide range of Six Sigma and 5M scenarios.
+Here is the syntax given to GPT-4 for generating the synthetic data:
+![Generating synthetic data method](Documentation/images/Generating_Synthetic_Data_Method.jpeg)
+
 
 Diversity Considerations
 ~~~~~~~~~~~~~~~~~~~~~~~
