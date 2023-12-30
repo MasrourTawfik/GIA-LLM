@@ -1,4 +1,3 @@
-################
 Preparing the 'doctorllm' dataset for LLM Adapter Training
 =========================================================
 
@@ -68,9 +67,3 @@ The datasets were concatenated, and the only processing required was swapping co
     df.to_csv('processed_doctorllm.csv', index=False)
 
 
-Conclusion
-----------
-
-You have now successfully prepared the 'doctorllm' dataset by concatenating and processing two distinct datasets from Hugging Face. This dataset is now ready to be used for training an LLM adapter, ensuring a more robust and specialized model.
-
-################
