@@ -14,8 +14,8 @@ Prerequisites
 Before you start, ensure you have the following:
 
 - An account on HuggingFace. You can create one `here <https://huggingface.co/>`_.
-- The datasets library installed: `pip install datasets`.
-- The pandas library installed: `pip install pandas`.
+- The datasets library installed: * `pip install datasets` *.
+- The pandas library installed:   * `pip install pandas` *.
 
 Datasets Used
 -------------
