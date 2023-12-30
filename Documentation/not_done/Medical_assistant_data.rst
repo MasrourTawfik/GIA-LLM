@@ -4,7 +4,7 @@ Preparing and Loading the 'doctorllm' dataset for LLM Adapter Training
 In this documentation, we'll outline the process of preparing the 'doctorllm' dataset used for training an LLM adapter. This dataset is a combination of two distinct datasets from Hugging Face, which were concatenated and processed using the pandas library.
 
 .. note:: 
-   While we've found and used more comprehensive and superior datasets for adapter training, this tutorial utilizes these particular two for their simplicity and straightforward preprocessing requirements. This choice allows us to focus on the methodology rather than data processing complexities.
+   *While we've found and used more comprehensive and superior datasets for adapter training, this tutorial utilizes these particular two for their simplicity and straightforward preprocessing requirements. This choice allows us to focus on the methodology rather than data processing complexities.*
 
 
 
