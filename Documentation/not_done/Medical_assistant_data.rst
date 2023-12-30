@@ -31,7 +31,7 @@ We used two datasets for this process:
    :alt: Screenshot of the first dataset
    :name: dataset1_preview
 
-   Preview of the LinhDuong/chatdoctor-5k dataset.
+   *Preview of the LinhDuong/chatdoctor-5k dataset.*
 
 .. figure:: /Documentation/images/docdata1.PNG
    :width: 80%
@@ -39,7 +39,7 @@ We used two datasets for this process:
    :alt: Screenshot of the second dataset
    :name: dataset2_preview
 
-   Preview of the mrm8488/chatdoctor200k dataset.
+   *Preview of the mrm8488/chatdoctor200k dataset.*
 
 
 Data Concatenation and Processing
