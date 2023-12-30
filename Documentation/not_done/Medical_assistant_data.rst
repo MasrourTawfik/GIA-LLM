@@ -14,16 +14,16 @@ Prerequisites
 Before you start, ensure you have the following:
 
 - An account on HuggingFace. You can create one `here <https://huggingface.co/>`_.
-- The datasets library installed:  `pip install datasets` .
-- The pandas library installed:    `pip install pandas` .
+- The datasets library : ``pip install datasets`` .
+- The pandas library : ``pip install pandas`` .
 
 Datasets Used
 -------------
 
 We used two datasets for this process:
 
-1. LinhDuong/chatdoctor-5k: `https://huggingface.co/datasets/LinhDuong/chatdoctor-5k/viewer/default`
-2. mrm8488/chatdoctor200k: `https://huggingface.co/datasets/mrm8488/chatdoctor200k/viewer/default/train`
+1. `LinhDuong/chatdoctor-5k <https://huggingface.co/datasets/LinhDuong/chatdoctor-5k/viewer/default>`_.
+2. `mrm8488/chatdoctor200k <https://huggingface.co/datasets/mrm8488/chatdoctor200k/viewer/default/train>`_.
 
 .. figure:: /Documentation/images/docdata0.PNG
    :width: 80%
