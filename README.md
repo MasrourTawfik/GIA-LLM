@@ -8,8 +8,8 @@
 ## Getting Started
 To get started with this project, follow these steps:
 
-1. Open the terminal.
-2. Mak sure you have Git installed in your computer, if it is not installed, then download it from [here](https://git-scm.com/downloads).
+1. Mak sure you have Git installed in your computer, if it is not installed, then download it from [here](https://git-scm.com/downloads).
+2. Open the terminal.
 3. Clone the repository: `git clone https://github.com/MasrourTawfik/GIA-LLM.git`
 
 ## Usage
