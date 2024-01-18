@@ -11,6 +11,7 @@ Welcome to Chat2IA's documentation!
    :caption: Table of Content:
 
    Documentation/scripts/Group_Members
+   Documentation/scripts/Pipeline
    Documentation/scripts/Model
    Documentation/scripts/Chainlit
    Documentation/scripts/Synthetic_data

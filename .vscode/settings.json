@@ -2,4 +2,5 @@
     "esbonio.sphinx.confDir"  : "${workspaceFolder}",
     "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
     "editor.wordWrap": "on",
+    "iis.configDir": "",
 }
