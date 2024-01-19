@@ -1,5 +1,5 @@
 
-Data Preparation and Upload Notebook Documentation
+Data Merging
 ==================================================
 
 Overview
@@ -12,7 +12,7 @@ This document details the code and its functionalities in the Jupyter Notebook d
 Unzipping Data
 --------------
 
-.. code-block:: python
+.. code-block:: bash
 
     !unzip /content/data_LLM.zip
 
@@ -22,7 +22,7 @@ Unzips the 'data_LLM.zip' file, ensuring the raw data is accessible for processi
 Installing Datasets Package
 ---------------------------
 
-.. code-block:: python
+.. code-block:: bash
 
     !pip install datasets
 

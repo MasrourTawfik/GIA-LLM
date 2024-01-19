@@ -16,3 +16,4 @@ Welcome to Chat2IA's documentation!
    Documentation/scripts/4_0_Domain_specific_dataset
    Documentation/scripts/5_0_Chainlit
    Documentation/scripts/6_0_RAG
+   Documentation/scripts/7_Deployment

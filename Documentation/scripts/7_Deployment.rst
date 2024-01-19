@@ -1,4 +1,4 @@
-Deploy to Replicate Notebook Documentation
+Deploy to Replicate
 ==========================================
 
 Overview
