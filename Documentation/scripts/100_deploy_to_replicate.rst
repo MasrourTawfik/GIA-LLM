@@ -10,7 +10,7 @@ This document details the code and its functionalities in the "deploy-to-replica
 
 Setting Checkpoint Directory
 ----------------------------
-**Code:**
+
 .. code-block:: python
 
     checkpoint_dir = "."
