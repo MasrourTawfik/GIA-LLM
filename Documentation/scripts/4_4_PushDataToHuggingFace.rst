@@ -1,15 +1,15 @@
-How to push your dataset to HuggingFace
-========================================================
+Host the dataset in HuggingFace
+=======================================
 
 We have seen in the previous tutorial :doc:`FineTuning_Ludwig <3_1_FineTuning_Ludwig>` that in order to fine-tune a model on a new task, we need to have a dataset in the right format. In this tutorial, we will see how to push your dataset to HuggingFace so that it can be used later to fine-tune a model.
 
 .. note:: 
     You need to create an account on HuggingFace to be able to push your dataset. You can create an account `here <https://huggingface.co/>`_.
 
-    There is a video tutorial available for this section `here <put_the_link_here>`_.
+    There is a video tutorial available for this section `watch it <put_the_link_here>`_.
 
 
-Pushing your dataset
+Pushing the dataset
 --------------------
 
 Once your dataset is in the right format (see the data format :doc:`tutorial <4_1_DataFormat>`), you can upload it to HuggingFace. To do so, you need to follow the following steps:

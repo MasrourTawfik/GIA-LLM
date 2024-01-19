@@ -46,7 +46,7 @@ Synthetic Data Generation
 In parallel to adapter integration, synthetic data is generated using GPT-4. This data can be used to further train and refine the models, ensuring that they are well-equipped to handle a variety of scenarios.
 
 .. hint::
-   For more details, refer to the *Synthetic data* :doc:`tutorial <4_2_Synthetic_data>`.
+   For more details, refer to the *Synthetic data* :doc:`tutorial <4_3_Synthetic_data>`.
 
 Interface
 --------------------------------

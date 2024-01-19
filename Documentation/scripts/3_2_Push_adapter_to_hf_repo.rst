@@ -8,7 +8,7 @@ In this section, we will show you how to push your adapter to Hugging Face. This
     This section assumes that you have already went through the fine-tuning using the Ludwig library and that you have a Hugging Face account. If you have not done so, please go back to this section first (2.3 fine-tuning using Ludwig).
 
 Ludwig API
---------
+------------------------
 
 Assuming that you have used Ludwig to fine-tune an open source llm of your choice. At the end of training, a new folder will be created called **results**. This is an example of what you will see after the training is done:
 

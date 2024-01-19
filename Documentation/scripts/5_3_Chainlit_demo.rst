@@ -1,13 +1,13 @@
 Chainlit: an easy way to interact with LLMs
-======================================
+==================================================
 
 In this section, we'll demonstrate the process of engaging with an open-source language model of your choice available on the Hugging Face model hub. To facilitate this interaction, we'll leverage the Chainlit library—an open-source asynchronous Python framework designed to expedite the creation of applications akin to ChatGPT. This library enables seamless interaction with models through an automatically generated user interface. For more detailed insights into Chainlit and its functionalities, further information is available `here <https://github.com/Chainlit/chainlit>`_.
 
 .. note::
-    There is a video tutorial available for this section `here <put_the_link_here>`_.
+    There is a video tutorial available for this section `watch it <put_the_link_here>`_.
 
 Prerequisites
---------
+--------------------------------
 
 To get started, we'll need to install the Chainlit library and other dependencies. To do so, we'll create a new virtual environment using the following command:
 
@@ -37,7 +37,7 @@ Next, we'll activate the virtual environment and install the necessary dependenc
     pip install torch
 
 Downloading the model
---------
+--------------------------------
 
 The models that we need to download from Hugging Face Hub should be in the **GGUF** format. In this `link <https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/tree/main>`_ you can find the **Mistral** model in this format, download the model that has this name **mistral-7b-instruct-v0.1.Q4_K_S.gguf** because we will need it for the rest of this tutorial. If you want to use another llm just search for it in one of TheBloke's `repositories <https://huggingface.co/TheBloke>`_.
 
@@ -51,7 +51,7 @@ The models that we need to download from Hugging Face Hub should be in the **GGU
 
 
 The interface
---------
+--------------------------------
 
 Now let's create a new file called **app.py** and import the necessary libraries:
 
