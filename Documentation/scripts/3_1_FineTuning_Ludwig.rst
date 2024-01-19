@@ -1,20 +1,22 @@
-Fine-tuning using Ludwig
-------------------------
+FineTuning using Ludwig
+=============================
 
-Fine-tuning allows the adaptation of pre-trained LLMs to a specific task by updating model weights, leading to performance improvements. It’s a means to personalize these general models for specialized applications, optimizing performance for unique tasks.
+Fine-tuning allows the adaptation of pre-trained LLMs to a specific task by updating model weights, leading to performance improvements. It is a means to personalize these general models for specialized applications, optimizing performance for unique tasks.
 
-1. Traditional Fine Tuning Vs. Parameter Efficient Fine-Tuning
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Traditional FineTuning Vs. Parameter Efficient FineTuning
+-------------------------------------------------------------
+
 Traditional fine-tuning involves updating all model parameters, a process proven to be resource-intensive, time-consuming, and not always yield optimal task-specific performance. However, recent innovations in parameter-efficient fine-tuning have offered a breakthrough. By freezing the pre-trained LLM and only training a very small set of task-specific layers—less than 1% of the total model weight—efficient fine-tuning proves to be both resource-friendly and more effective.
 
-.. image:: /Documentation/images/traditional_vs_peft.png
+.. figure:: /Documentation/images/traditional_vs_peft.png
    :width: 100%
    :align: center
+   :alt: Alternative text for the image
 
-|
+   Traditional FineTuning Vs. Parameter Efficient FineTuning.
 
 1. Fine-tuning using Ludwig
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 Ludwig offers a declarative approach to machine learning, providing an accessible interface to control and customize models without extensive coding. Its YAML-based configurations empower users to manage different input features and output tasks efficiently. 
 Imagine a world where we feed the model a prompt, pair it with specific instructions and context, and let the magic happen. The prompt acts as a guide, steering the model’s understanding of the task at hand. And this is where Ludwig’s advanced features come into play.
@@ -24,7 +26,7 @@ Imagine a world where we feed the model a prompt, pair it with specific instruct
 Now, let’s delve deeper into the nitty-gritty of advanced configuration and the fine-tuning parameters that Ludwig offers.
 
 1.1 Install Ludwig and Ludwig's LLM related dependencies
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------------------
 
 .. code-block:: bash
 
@@ -54,8 +56,7 @@ Now, let’s delve deeper into the nitty-gritty of advanced configuration and th
 
 
 1.2. Import The Code Generation Dataset
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+-------------------------------------------------------------
 .. code-block:: python
 
     from google.colab import data_table; data_table.enable_dataframe_formatter()
@@ -99,11 +100,12 @@ Now, let’s delve deeper into the nitty-gritty of advanced configuration and th
 
 This is how the dataset looks like:
 
-.. image:: /Documentation/images/data.JPG
+.. figure:: /Documentation/images/data.JPG
    :width: 100%
    :align: center
+   :alt: Alternative text for the image
 
-|
+   A look at the Code Alpaca dataset.
 
 This dataset is meant to train a large language model to following instructions to produce code from natural language. Each row in the dataset consists of an:
 
@@ -161,7 +163,7 @@ This is a script that calculates various statistics for token distributions in d
     token_distribution
 
 1.3. Setup Your HuggingFace Token 🤗
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------------
 
 .. code-block:: python
 
@@ -183,7 +185,7 @@ This is a script that calculates various statistics for token distributions in d
     assert os.environ["HUGGING_FACE_HUB_TOKEN"]
 
 1.4. Fine-tuning
-~~~~~~~~~~~~~~~~
+--------------------------------
 
 .. note:: 
     We're going to fine-tune using a single T4 GPU with 16GiB of GPU VRAM on Colab.
@@ -271,11 +273,12 @@ We can now use the model we fine-tuned above to make predictions on some test ex
 
 This is how the dataset looks like:
 
-.. image:: /Documentation/images/dataFineTuning.JPG
+.. figure:: /Documentation/images/dataFineTuning.JPG
    :width: 100%
    :align: center
+   :alt: Alternative text for the image
 
-|
+   A look at the dataset with the generated output.
 
 .. note:: he inference outputs may not be perfect, especially if the fine-tuning epochs are limited. However, by tweaking parameters like generation configuration (temperature, maximum new tokens, etc.), the outputs can be altered, thereby refining the model’s responses.
  
