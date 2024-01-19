@@ -11,7 +11,7 @@ This document details the code and its functionalities in the Jupyter Notebook d
 
 Unzipping Data
 --------------
-**Code:**
+
 .. code-block:: python
 
     !unzip /content/data_LLM.zip
@@ -21,7 +21,7 @@ Unzips the 'data_LLM.zip' file, ensuring the raw data is accessible for processi
 
 Installing Datasets Package
 ---------------------------
-**Code:**
+
 .. code-block:: python
 
     !pip install datasets
@@ -31,7 +31,7 @@ Installs the 'datasets' package necessary for efficient data handling and proces
 
 Merging JSON Files into JSONL
 -----------------------------
-**Code:**
+
 .. code-block:: python
 
     import os
@@ -54,7 +54,7 @@ Reads multiple JSON files from the specified directory and merges them into a si
 
 Loading Dataset
 ---------------
-**Code:**
+
 .. code-block:: python
 
     from datasets import Dataset, Features, Value, ClassLabel, Sequence, load_dataset
@@ -68,7 +68,7 @@ Loads the merged JSONL file as a dataset using the 'datasets' library and prints
 
 Authentication for Hugging Face
 -------------------------------
-**Code:**
+
 .. code-block:: python
 
     from huggingface_hub import notebook_login
@@ -79,7 +79,7 @@ Prompts for Hugging Face authentication, ensuring secure access for uploading th
 
 Pushing to Hugging Face
 -----------------------
-**Code:**
+
 .. code-block:: python
 
     dataset.push_to_hub("badreddine_LLM_data")
