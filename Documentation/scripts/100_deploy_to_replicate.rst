@@ -20,7 +20,7 @@ Sets the checkpoint directory to the current directory. This is typically used t
 
 Install Docker Script
 ---------------------
-**Code:**
+
 .. code-block:: bash
 
     %%writefile install_docker.sh
@@ -69,7 +69,7 @@ Creates and writes a bash script named `install_docker.sh` to install Docker. Th
 
 Executing the Install Script
 ----------------------------
-**Code:**
+
 .. code-block:: bash
 
     !chmod +x install_docker.sh && ./install_docker.sh
@@ -81,7 +81,7 @@ Makes the `install_docker.sh` script executable and then runs it. This step exec
 
 Install Replicate Cog
 ---------------------
-**Code:**
+
 .. code-block:: bash
 
     !sudo curl -o /usr/local/bin/cog -L https://github.com/replicate/cog/releases/latest/download/cog_`uname -s`_`uname -m`
@@ -92,7 +92,7 @@ Downloads and installs Replicate's Cog tool, a necessary component for building 
 
 Initialize Cog
 --------------
-**Code:**
+
 .. code-block:: bash
 
     !cd {checkpoint_dir}
@@ -103,7 +103,7 @@ Changes the directory to the specified checkpoint directory and initializes a ne
 
 Define Cog Configuration
 ------------------------
-**Code:**
+
 .. code-block:: bash
 
     %%writefile cog.yaml
@@ -119,7 +119,7 @@ Creates a `cog.yaml` file to define the configuration for Cog, including the use
 
 Define Requirements
 -------------------
-**Code:**
+
 .. code-block:: bash
 
     %%writefile requirements.txt
@@ -134,7 +134,7 @@ Specifies the Python requirements for the project in a `requirements.txt` file. 
 
 Prediction Interface
 --------------------
-**Code:**
+
 .. code-block:: python
 
     %%writefile predict.py
@@ -146,7 +146,7 @@ Creates a `predict.py` file that defines the prediction interface for Cog. This 
 
 Push to Replicate
 -----------------
-**Code:**
+
 .. code-block:: bash
 
     sudo cog login && sudo cog push r8.im/<your-username>/<your-model-name>
