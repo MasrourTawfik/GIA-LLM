@@ -6,7 +6,7 @@ We have seen in the previous tutorial :doc:`FineTuning_Ludwig <3_1_FineTuning_Lu
 .. note:: 
     You need to create an account on HuggingFace to be able to push your dataset. You can create an account `here <https://huggingface.co/>`_.
 
-    There is a video tutorial available for this section `watch it <put_the_link_here>`_.
+    There is a video tutorial available for this section `watch it <https://drive.google.com/file/d/1_tpQ6gbm94miYJ17rFTB8EtVc1F-xZuF/view?usp=drive_link>`_.
 
 
 Pushing the dataset

@@ -6,6 +6,8 @@ In this part, we will see how we can add a dropdown menu to give the user the ab
 .. note:: 
     Make sure that the ``chainlit`` package is installed. If not, run ``pip install chainlit``.
 
+    There is a video tutorial available for this section `watch it <https://drive.google.com/file/d/1yhFJByI0qRtNXkf_Ndygyuts8MZk4aH_/view?usp=drive_link>`_.
+
 The implementation
 ------------------
 
