@@ -1,4 +1,0 @@
-torch
-langchain
-ctransformers
-chainlit
