@@ -4,7 +4,7 @@ Chainlit: an easy way to interact with LLMs
 In this section, we'll demonstrate the process of engaging with an open-source language model of your choice available on the Hugging Face model hub. To facilitate this interaction, we'll leverage the Chainlit library—an open-source asynchronous Python framework designed to expedite the creation of applications akin to ChatGPT. This library enables seamless interaction with models through an automatically generated user interface. For more detailed insights into Chainlit and its functionalities, further information is available `here <https://github.com/Chainlit/chainlit>`_.
 
 .. note::
-    There is a video tutorial available for this section `watch it <https://drive.google.com/file/d/1Jy8X4CYQgeCYVIjCIgb2LgMuqk9oVQ62/view?usp=drive_link>`_.
+    There is a video tutorial available for this section `watch it <https://drive.google.com/file/d/1VnEHblHNItPejQkhWGLQxOYvKIQ5B7Om/view?usp=drive_link>`_.
 
 Prerequisites
 --------------------------------

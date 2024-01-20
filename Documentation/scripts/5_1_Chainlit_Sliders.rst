@@ -6,7 +6,7 @@ To control the behavior of the llm, we can change some hyperparameters like the 
 .. note:: 
     For more information on the hyperparameters that you can play with, please refer to the CTransformers `documentation <https://github.com/marella/ctransformers#config>`_.
 
-    There is a video tutorial available for this section `watch it <https://drive.google.com/file/d/1RMJXZHJu07G6adtvYuu6SV4ZDwskKYuB/view?usp=drive_link>`_.
+    There is a video tutorial available for this section `watch it <https://drive.google.com/file/d/1HNQcfWgIopzxnMTqv2j2zNgJHlOSzSXA/view?usp=drive_link>`_.
 
 
 The implementation
